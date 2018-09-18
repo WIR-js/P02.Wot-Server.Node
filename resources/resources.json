@@ -1,0 +1,36 @@
+{
+    "pi": {
+      "name": "WoT Pi",
+      "port": 8000,
+      "sensors": {
+        "temperature": {
+          "name": "Temperature Sensor",
+          "description": "An ambient temperature sensor.",
+          "unit": "celsius",
+          "value": 0,
+          "gpio": 12
+        },
+        "humidity": {
+          "name": "Humidity Sensor",
+          "description": "An ambient humidity sensor.",
+          "unit": "%",
+          "value": 0,
+          "gpio": 12
+        }
+      },
+      "actuators": {
+        "leds": {
+          "1": {
+            "name": "LED 1",
+            "value": false,
+            "gpio": 4
+          },
+          "2": {
+            "name": "LED 2",
+            "value": false,
+            "gpio": 9
+          }
+        }
+      }
+    }
+  }
