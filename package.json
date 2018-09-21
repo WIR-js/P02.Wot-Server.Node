@@ -8,22 +8,8 @@
   },
   "author": "Vlad Trifa",
   "license": "Apache-2.0",
-  "keywords": [
-    "web of things",
-    "building the web of things",
-    "wot",
-    "REST",
-    "HTTP",
-    "mqtt",
-    "pi",
-    "coap",
-    "m2m",
-    "iot",
-    "tcp",
-    "internet of things",
-    "messaging"
-  ],
   "dependencies": {
+    "body-parser": "^1.13.1",
     "cors": "^2.7.1",
     "express": "^4.12.4",
     "node-json2html": "^1.0.0"
