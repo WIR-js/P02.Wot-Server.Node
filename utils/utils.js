@@ -1,4 +1,4 @@
-var resources = require('./../resources/model');
+var resources = require('../resources/model');
 
 exports.addDevice = function(id, name, description, sensors, actuators) {
   if(!resources.things) {
