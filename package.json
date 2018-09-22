@@ -12,7 +12,8 @@
     "body-parser": "^1.13.1",
     "cors": "^2.7.1",
     "express": "^4.12.4",
-    "node-json2html": "^1.0.0"
+    "node-json2html": "^1.0.0",
+    "msgpack5": "^3.3.0"
   },
   "optionalDependencies": {
     "onoff": "^1.0.4",
