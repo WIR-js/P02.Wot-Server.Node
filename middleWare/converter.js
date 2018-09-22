@@ -26,6 +26,14 @@ module.exports = function() { //#B
         res.send(encode(req.result)); //#F
         return;
       }
+       
+      
+      if (req.accepts('text')) {
+        console.info('value representation selected!');
+        res.type('text');
+        res.send(req.result); //#F
+        return;
+      }
 
       console.info('Defaulting to JSON representation!');
       res.send(req.result); //#G
