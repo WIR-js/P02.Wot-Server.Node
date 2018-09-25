@@ -16,7 +16,7 @@
     "msgpack5": "^3.3.0"
   },
   "optionalDependencies": {
-    "onoff": "^1.0.4",
-    "node-dht-sensor": "^0.0.8"
+    "node-dht-sensor": "^0.0.8",
+    "onoff": "^1.2.0"
   }
 }

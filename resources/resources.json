@@ -28,7 +28,7 @@
           "2": {
             "name": "LED 2",
             "value": false,
-            "gpio": 9
+            "gpio": 17
           }
         }
       }
