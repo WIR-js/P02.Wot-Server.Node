@@ -32,29 +32,25 @@
             "name": "LED 1",
             "description": "A Blue LED.",
             "value": false,
-            "gpio": 4,
-            "index": 1
+            "gpio": 4
           },
           "2": {
             "name": "LED 2",
             "description": "A Red LED.",
             "value": false,
-            "gpio": 17,
-            "index": 2
+            "gpio": 17
           },  
           "3": {
             "name": "LED 3",
             "description": "A Green LED.",
             "value": false,
-            "gpio": 27,
-            "index": 3
+            "gpio": 27
           },
           "4": {
             "name": "LED 4",
             "description": "LED ALERT.",
             "value": false,
-            "gpio": 2,
-            "index": 4
+            "gpio": 2
           }
         }
       }
