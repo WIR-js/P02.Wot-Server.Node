@@ -15,7 +15,7 @@ exports.start = (server) => {
    });
 
   console.log('WebSocket server started...');
-}
+};
 
 
 
@@ -31,4 +31,4 @@ exports.send = function(data) {
       console.log('websocket.send(): ' + e);
     }
   
-}
+};
