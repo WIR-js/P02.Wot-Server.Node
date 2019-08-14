@@ -8,6 +8,9 @@ var converter = require('../middleWare/converter');
 app.use(bodyParser.json()).get(function(req ,res, next){
 next();
 });
+app.use(express.bodyParser()).get(function(req ,res, next){
+    next();
+});
 app.use(cors()).get(function(req ,res, next){
 next();
 });
