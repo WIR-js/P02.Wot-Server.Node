@@ -18,5 +18,8 @@
   "optionalDependencies": {
     "node-dht-sensor": "^0.0.8",
     "onoff": "^1.2.0"
+  },
+  "devDependencies": {
+    "ws": "3.3.2"
   }
 }

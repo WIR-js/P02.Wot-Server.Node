@@ -1,2 +1,2 @@
-var resources = require('./resources.json');
+let resources = require('./resources.json');
 module.exports = resources;
