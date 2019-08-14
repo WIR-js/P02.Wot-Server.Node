@@ -11,7 +11,7 @@ console.log("HTTP server is running on http//127.0.0.1:1000");
 
 
 wsServer.start(server);
-LEDplugin.start({'frequency': 2000, 'LEDs': [LED[1], LED[2],LED[3]] });
+LEDplugin.start({'frequency': 2000, 'LEDs': [LED[1], LED[2],LED[3],LED[4]] });
 dhtPlugin.start({'hardware': true, 'frequency': 5000});
 pirPligin.start();
 
