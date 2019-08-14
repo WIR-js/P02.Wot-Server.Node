@@ -28,25 +28,25 @@
       },
       "actuators": {
         "leds": {
-          "0": {
+          "1": {
             "name": "LED 1",
             "description": "A Blue LED.",
             "value": false,
             "gpio": 4
           },
-          "1": {
+          "2": {
             "name": "LED 2",
             "description": "A Red LED.",
             "value": false,
             "gpio": 17
           },  
-          "2": {
+          "3": {
             "name": "LED 3",
             "description": "A Green LED.",
             "value": false,
             "gpio": 27
           },
-          "3": {
+          "4": {
             "name": "LED 4",
             "description": "LED ALERT.",
             "value": false,
