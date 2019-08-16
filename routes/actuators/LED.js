@@ -7,7 +7,7 @@ let observe = function (model) {
         set: function (target, key, value) {
             try {
                 if (key === 'value') {
-                    console.log("led"+ target);
+                    console.log(target);
                     console.log("led value" + value);
                     // led_selected = Select_actuator(target, value);
                     if (value) {
