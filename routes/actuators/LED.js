@@ -13,7 +13,6 @@ router.route('/:id').get(function (req, res, next) {
     req.result = resources.pi.actuators.leds[req.params.id];
     next();
 }).put(function (req, res, next) {
-    console.log(resources.pi.actuators.leds[req.params.id]);
     let selected_led = ledplugin.observe(resources.pi.actuators.leds[req.params.id]);
     selected_led.value = req.body.value;
     req.result = selected_led;
