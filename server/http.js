@@ -5,12 +5,8 @@ var cors = require('cors');
 var bodyParser = require('body-parser');
 var converter = require('../middleWare/converter');
 
-app.use(bodyParser.json()).get(function(req ,res, next){
-next();
-});
-app.use(bodyParser.urlencoded({ extended: false })).get(function(req ,res, next){
-    next();
-});
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors()).get(function(req ,res, next){
 next();
 });
