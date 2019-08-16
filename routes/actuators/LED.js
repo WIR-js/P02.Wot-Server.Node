@@ -14,7 +14,7 @@ let observe = function (model) {
                         led_selected.writeSync(1);
                         console.info(`%s is ON`, target.name);
                     } else {
-                        //    led_selected.writeSync(0);
+                        led_selected.writeSync(0);
                         console.info(`%s is OFF`, target.name);
                     }
                 }
