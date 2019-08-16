@@ -3,8 +3,8 @@ var router = express.Router();
 
 router.use('/sensors/dht11/temperature' , require('./sensors/dht11/temperature') );
 router.use('/sensors/dht11/humidity', require('./sensors/dht11/humidity') );
+router.use('/sensors/pir', require('./sensors/pir/MotionPir') );
 router.use('/actuators/leds', require('./actuators/LED') );
-router.use('/actuators/pir', require('./actuators/MotionPir') );
 
 
 module.exports = router;
