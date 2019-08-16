@@ -9,7 +9,7 @@ let observe = function (model) {
                 if (key === 'value') {
                     console.log(target);
                     console.log("led value" + value);
-                     led_selected = Select_actuator(target, value);
+                    let led_selected = Select_actuator(target, value);
                     if (value) {
                         led_selected.writeSync(1);
                         console.info(`%s is ON`, target.name);
