@@ -13,9 +13,8 @@ router.route('/:id').get(function (req, res, next) {
     req.result = resources.pi.actuators.leds[req.params.id];
     next();
 }).put(function (req, res, next) {
-    let selected_led = ledplugin.observe(resources.pi.actuators.leds[req.params.id]);
-    selected_led.value = req.body.value;
-    req.result = selected_led;
+    ledplugin.observe(resources.pi.actuators.leds[req.params.id]).value = req.body.value;
+    req.result = resources.pi.actuators.leds[req.params.id];
     next();
 });
 module.exports = router;
