@@ -2,21 +2,6 @@ let express = require('express');
 let router = express.Router();
 let resources = require('../../resources/model');
 let ledplugin = require('../../plugins/leds');
-/*
-let observe = function (model) {
-    return new Proxy(model, {
-        set: function (target, key, value) {
-            let ledplugin = require('../../plugins/leds');
-            try {
-                ledplugin.switching(target, value);
-                return Reflect.set(target, key, value);
-            } catch (err) {
-                console.log(err);
-            }
-        }
-    });
-};
-*/
 
 router.route('/').get(function (req, res, next) {
     req.result = resources.pi.actuators.leds;
