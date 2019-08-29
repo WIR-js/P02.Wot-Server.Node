@@ -1,14 +1,15 @@
 {
-    "pi": {
-      "name": "WoT Pi",
-      "port": 1000,
-      "sensors": {
+  "pi": {
+    "name": "WoT Pi",
+    "port": 1000,
+    "sensors": {
+      "DHT11": {
         "temperature": {
           "name": "Temperature Sensor",
           "description": "An ambient temperature sensor.",
           "unit": "celsius",
           "value": 0,
-	        "alertValue": 1000,
+          "alertValue": 1000,
           "gpio": 12
         },
         "humidity": {
@@ -18,41 +19,43 @@
           "value": 0,
           "gpio": 12
         },
-        "PIR":{
-          "name": "Motion Detector",
-          "description": "An ambient motion detector.",
-          "value": false,
-          "lock": false,
-          "gpio": 6
-        }
+        "frequency": 5000
       },
-      "actuators": {
-        "leds": {
-          "1": {
-            "name": "LED 1",
-            "description": "A Blue LED.",
-            "value": false,
-            "gpio": 4
-          },
-          "2": {
-            "name": "LED 2",
-            "description": "A Red LED.",
-            "value": false,
-            "gpio": 17
-          },  
-          "3": {
-            "name": "LED 3",
-            "description": "A Green LED.",
-            "value": false,
-            "gpio": 27
-          },
-          "4": {
-            "name": "LED 4",
-            "description": "LED ALERT.",
-            "value": false,
-            "gpio": 2
-          }
+      "PIR": {
+        "name": "Motion Detector",
+        "description": "An ambient motion detector.",
+        "value": false,
+        "lock": false,
+        "gpio": 6
+      }
+    },
+    "actuators": {
+      "leds": {
+        "1": {
+          "name": "LED 1",
+          "description": "A Blue LED.",
+          "value": false,
+          "gpio": 4
+        },
+        "2": {
+          "name": "LED 2",
+          "description": "A Red LED.",
+          "value": false,
+          "gpio": 17
+        },
+        "3": {
+          "name": "LED 3",
+          "description": "A Green LED.",
+          "value": false,
+          "gpio": 27
+        },
+        "4": {
+          "name": "LED 4",
+          "description": "LED ALERT.",
+          "value": false,
+          "gpio": 2
         }
       }
     }
   }
+}
