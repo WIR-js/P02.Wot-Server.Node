@@ -9,17 +9,17 @@
   "author": "Vlad Trifa",
   "license": "Apache-2.0",
   "dependencies": {
-    "body-parser": "^1.13.1",
-    "cors": "^2.7.1",
-    "express": "^4.12.4",
-    "node-json2html": "^1.0.0",
-    "msgpack5": "^3.3.0"
+    "body-parser": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "node-json2html": "latest",
+    "msgpack5": "latest"
   },
   "optionalDependencies": {
     "node-dht-sensor": "^0.0.8",
     "onoff": "^1.2.0"
   },
   "devDependencies": {
-    "ws": "3.3.2"
+    "ws": "latest"
   }
 }
