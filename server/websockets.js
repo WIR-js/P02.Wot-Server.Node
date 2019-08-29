@@ -23,7 +23,7 @@ exports.send = function(data) {
  try {
    if(ws !== undefined && ws._receiver !== null){
     ws.send(data);
-    console.log(${data});
+    console.log(data);
      } 
   } catch (e) {
       console.log('websocket.send(): ' + e);
