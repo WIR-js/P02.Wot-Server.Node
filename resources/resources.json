@@ -5,21 +5,20 @@
     "sensors": {
       "DHT11": {
         "temperature": {
-          "name": "Temperature Sensor",
+          "name": "Temperature Propert",
           "description": "An ambient temperature sensor.",
           "unit": "celsius",
           "value": 0,
-          "alertValue": 1000,
-          "gpio": 12
+          "alertValue": 1000
         },
         "humidity": {
-          "name": "Humidity Sensor",
+          "name": "Humidity Propert",
           "description": "An ambient humidity sensor.",
           "unit": "%",
-          "value": 0,
-          "gpio": 12
+          "value": 0
         },
-        "frequency": 5000
+        "frequency": 5000,
+        "gpio": 12
       },
       "PIR": {
         "name": "Motion Detector",

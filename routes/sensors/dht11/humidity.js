@@ -11,7 +11,7 @@ action: send humidity property of  dht11 sensor
 
 router.get('/', function (req, res,next) {
    req.result=resources.pi.sensors.DHT11.humidity;
-   next()
+   next();
 });
 
 
