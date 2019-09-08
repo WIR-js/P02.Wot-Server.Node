@@ -18,14 +18,16 @@
           "value": 0
         },
         "frequency": 5000,
-        "gpio": 12
+        "gpio": 12,
+        "status": false
       },
       "PIR": {
         "name": "Motion Detector",
         "description": "An ambient motion detector.",
         "value": false,
         "lock": false,
-        "gpio": 6
+        "gpio": 6,
+        "status": false
       }
     },
     "actuators": {
@@ -34,25 +36,29 @@
           "name": "LED 1",
           "description": "A Blue LED.",
           "value": false,
-          "gpio": 4
+          "gpio": 4,
+          "status": false
         },
         "2": {
           "name": "LED 2",
           "description": "A Red LED.",
           "value": false,
-          "gpio": 17
+          "gpio": 17,
+          "status": false
         },
         "3": {
           "name": "LED 3",
           "description": "A Green LED.",
           "value": false,
-          "gpio": 27
+          "gpio": 27,
+          "status": false
         },
         "4": {
           "name": "LED 4",
           "description": "LED ALERT.",
           "value": false,
-          "gpio": 2
+          "gpio": 2,
+          "status": false
         }
       }
     }

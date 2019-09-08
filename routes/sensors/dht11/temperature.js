@@ -23,9 +23,9 @@ action: can change alertValue and send temperature property of  dht11 sensor
  */
 
 router.put('/alertValue' ,function(req, res, next){
-     resources.pi.sensors.DHT11.temperature.alertValue = req.body.value;
-     req.result = resources.pi.sensors.DHT11.temperature;
-     next();
+    resources.pi.sensors.DHT11.temperature.alertValue = req.body.value;
+    req.result = resources.pi.sensors.DHT11.temperature;
+    next();
 });
 
 

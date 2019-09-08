@@ -29,7 +29,14 @@ router.route('/:id').get(function (req, res, next) {
     req.result = resources.pi.actuators.leds[req.params.id];
     next();
 }).put(function (req, res, next) {
-    ledplugin.observe(resources.pi.actuators.leds[req.params.id]).value = req.body.value;
+    switch (req.body.value) {
+        case 'true':
+            ledplugin.observe(resources.pi.actuators.leds[req.params.id]).value = true;
+            break;
+        case 'false':
+            ledplugin.observe(resources.pi.actuators.leds[req.params.id]).value = false;
+            break;
+    }
     req.result = resources.pi.actuators.leds[req.params.id];
     next();
 });

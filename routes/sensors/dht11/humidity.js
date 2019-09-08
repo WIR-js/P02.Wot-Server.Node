@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var resources = require('../../../resources/model');
+let express = require('express');
+let router = express.Router();
+let resources = require('../../../resources/model');
 /*
 url: ip:port/pi/sensors/dht11/humidity
 method: get
